@@ -7,7 +7,7 @@ function App() {
   }
   return (
     <>
-      <div className='h-screen flex flex-col items-center justify-center bg-red-400'>
+      <div className='h-screen flex flex-col items-center justify-center bg-yellow-400'>
         <button onClick={() => criar()} className='cursor-pointer border border-white font-semibold text-red-300 lg:bg-blue-500'> 
             cadastrar usuario
         </button>
