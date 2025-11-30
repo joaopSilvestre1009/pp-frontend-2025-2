@@ -1,19 +1,14 @@
-import { criarUsuario } from './api/criar-usuario'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/login-page";
+import Sign from "./pages/sign-page";
 
-function App() {
-
-  async function criar () {
-    await criarUsuario()
-  }
+export default function App() {
   return (
-    <>
-      <div className='h-screen flex flex-col items-center justify-center bg-cyan-400'>
-        <button onClick={() => criar()} className='cursor-pointer border border-white font-semibold text-red-300 lg:bg-blue-500'> 
-            cadastrar usuario
-        </button>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />}/>
+        <Route path="/cadastro" element={<Sign />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App

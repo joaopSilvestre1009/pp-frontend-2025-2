@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+
+    --color-background: #000000;
+    --text-color-white: rgba(255, 255, 255, 1);
+    --color-details: #FF6A00;
+
+    --font-sans: 'Nunito Sans';
+}
